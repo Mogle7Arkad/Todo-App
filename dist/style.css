@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.header{
+    background-color: rgb(145, 92, 27);
+}
+
+
+
+.main{
+    background-color: rgb(43, 109, 109);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.rightbar{
+    background-color: blueviolet;
+}

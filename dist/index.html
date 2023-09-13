@@ -3,16 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo Organiser</title>
+    <title>Task Scheduler</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="content">
+    <div id="content" class="content">
         <div class="header">
-            <div class="head">Task Scheduler</div>
+            <h1 class="head">Task Scheduler</h1>
         </div>
-        <div class="leftbar"></div>
-        <div class="rightbar"></div>
+        <div class="main">
+            <div class="leftbar">
+                <div class="left-item1" id="addTodo">Add Todo</div>
+                <h2 class="schedule-list-head">My Schedule</h2>
+                <ul class="scedule-list" data-list>
+                    <li class="list-name">Work</li>
+                    <li class="list-name">Recreation</li>
+                    <li class="list-name">Diet</li>
+                </ul>
+            </div>
+            <div class="rightbar">
+                <div class="todo-Form" style = "display: none">
+                    <div class="form-group">
+                        <label for="todoTitle">Title:</label>
+                        <input type="text" class="form-control" id="todoTitle">
+                        <div class="invalidation">Todo Title is required.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="todoDescription">Description:</label>
+                        <textarea class="form-control" id="todoDescription" rows="4"></textarea>
+                        <div class="invalidation">Todo Description is required.</div>
+                    </div>
+                    <div class="picks">
+                        <div class="form-group">
+                            <label for="todoDueDate">Due Date:</label>
+                            <input type="datetime-local" class="form-control" id="todoDueDate" max="2030-01-01T00:00" required="" min="2023-09-07T00:00">
+                            <div class="invalidation">Due Date is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="todoPriority">Priority:</label>
+                            <select class="custom-select" id="todoPriority">
+                                <option value="low" selected>Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button" id="submit">Submit ToDo</button>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script src="main.js"></script>
 </body>
