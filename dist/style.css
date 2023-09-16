@@ -6,21 +6,102 @@
 .content{
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 .header{
-    background-color: rgb(145, 92, 27);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(234, 29%, 20%);
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
+.add-todo-btn{
+    border: 1px solid;
+    width: 40%;
+    margin-left: 80px;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+}
 
+.todoform-div{
+    margin-top: 50px;
+    width: 300px;
+}
+
+.schedule-list-head{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10%;
+}
+
+.new-category-form{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#category-btn{
+    width: 20px;
+    height: 30px;
+    font-size: 20px;
+}
 
 .main{
-    background-color: rgb(43, 109, 109);
+    background-color: hsl(4, 100%, 67%);
+    color: hsl(234, 29%, 20%);
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .rightbar{
-    background-color: blueviolet;
+    background-color: hsl(234, 29%, 20%)
 }
+
+.todo-form{
+    margin: auto;
+    margin-left: 25px;
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    background-color: #eaedf0;
+}
+
+.form-control{
+    margin: auto;
+
+}
+
+
+input[type = "text"],
+input[type = "email"],
+input[type = "datetime-local"]{
+    background-color: #ffffff;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 70%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.headline{
+    color: hsl(4, 100%, 67%);
+    text-align: center;
+}
+
+.todo-item{
+    list-style: circle;
+    display: grid;
+    background-color: #d6d9dc;
+    color: hsl(234, 29%, 20%);;
+    grid-template-columns: 1fr 3fr 1fr.5fr .3fr;
+    justify-content: space-between;
+    margin: 20px;
+    height: 30px;
+}
+
+

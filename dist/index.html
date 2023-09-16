@@ -9,48 +9,52 @@
 <body>
     <div id="content" class="content">
         <div class="header">
-            <h1 class="head">Task Scheduler</h1>
+            <h1 class="header-name">Task Scheduler</h1>
         </div>
         <div class="main">
             <div class="leftbar">
-                <div class="left-item1" id="addTodo">Add Todo</div>
-                <h2 class="schedule-list-head">My Schedule</h2>
-                <ul class="scedule-list" data-list>
-                    <li class="list-name">Work</li>
-                    <li class="list-name">Recreation</li>
-                    <li class="list-name">Diet</li>
-                </ul>
+                <div class="add-todo-btn" id="addTodo">Add Todo</div>
+
+                <div class="todoform-div">
+                    <div class="todo-form" style = "display: none">
+                        <div class="form-group">
+                            <label for="todoTitle">Title:</label>
+                            <input type="text" class="form-control" id="todoTitle">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="todoDetails">Details:</label>
+                            <input type = "text" class="form-control" id="todoDetails" rows="4"></input>
+                        </div>
+
+                        <div class="picks">
+                            <div class="form-group">
+                                <label for="todoDueDate">Due Date:</label>
+                                <input type="date" class="form-control" id="todoDueDate" max="2030-01-01T00:00" required="" min="2023-09-07T00:00">
+                            </div>
+                            <div class="form-group">
+                                <label for="todoPriority">Priority:</label>
+                                <select class="custom-select" id="todoPriority">
+                                    <option value="Low" selected>Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button" id="submit">Submit ToDo</button>
+                    </div>
+                </div>
+                <h2 class="schedule-list-head">Task Categories</h2>
+                <ul class="schedule-list" data-list></ul>
+
+                <form action="" class="new-list-form">
+                    <input type="text" class="new-category-input" placeholder="New Category"/>
+                    <button class="new-list-btn"> + </button>
+                </form>
             </div>
             <div class="rightbar">
-                <div class="todo-Form" style = "display: none">
-                    <div class="form-group">
-                        <label for="todoTitle">Title:</label>
-                        <input type="text" class="form-control" id="todoTitle">
-                        <div class="invalidation">Todo Title is required.</div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="todoDescription">Description:</label>
-                        <textarea class="form-control" id="todoDescription" rows="4"></textarea>
-                        <div class="invalidation">Todo Description is required.</div>
-                    </div>
-                    <div class="picks">
-                        <div class="form-group">
-                            <label for="todoDueDate">Due Date:</label>
-                            <input type="datetime-local" class="form-control" id="todoDueDate" max="2030-01-01T00:00" required="" min="2023-09-07T00:00">
-                            <div class="invalidation">Due Date is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <label for="todoPriority">Priority:</label>
-                            <select class="custom-select" id="todoPriority">
-                                <option value="low" selected>Low</option>
-                                <option value="medium">Medium</option>
-                                <option value="high">High</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit" class="submit-button" id="submit">Submit ToDo</button>
-                </div>
+                <h1 class = "headline"> Todo List</h1>
+                <div id="todoLists"></div>
             </div>
         </div>
 
