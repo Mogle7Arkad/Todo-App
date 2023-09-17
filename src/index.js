@@ -1,5 +1,6 @@
 
-import { spreadTodoForm, removebtn} from "./dommanipulation";
-import { submitTodo} from "./dommanipulation";
+import { spreadTodoForm, createNewTodo, createNewCategory} from "./dommanipulation";
+
 spreadTodoForm();
-submitTodo();
+createNewTodo();
+createNewCategory();

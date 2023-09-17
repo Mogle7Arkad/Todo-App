@@ -1,8 +1,12 @@
 import { addTodoToList } from "./createTodo";
 
+function popUpForm(){
+    document.querySelector("#todoForm").style.display = "block";
+}
+
 export function spreadTodoForm() {
     document.querySelector("#addTodo").addEventListener("click", ()=>{
-        document.querySelector("#todoForm").style.display = "block";
+        popUpForm();
     })
 }
 
@@ -12,8 +16,13 @@ export function createNewCategory() {
     })
 }
 
+function closeUpForm(){
+    document.querySelector("#todoForm").style.display = "none";
+}
+
 export function createNewTodo() {
     document.querySelector("#submitTodo").addEventListener("click", () => {
         addTodoToList();
+        closeUpForm();
     })
 }
