@@ -23,4 +23,12 @@ App Features
 
 
 Screenshots
+### Inactive
+![inactive](https://github.com/Mogle7Arkad/Todo-App/assets/122323072/33f3f016-03c8-4060-8998-d741fcfb1099)
+
+### Active 1
+![todo1](https://github.com/Mogle7Arkad/Todo-App/assets/122323072/86c2628d-73af-4749-bc52-9430e2b06241)
+
+### Active 2
+![activetd](https://github.com/Mogle7Arkad/Todo-App/assets/122323072/9029b73b-3188-4fd2-9ce9-8f0ff736fa31)
 
