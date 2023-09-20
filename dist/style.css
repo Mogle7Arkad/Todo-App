@@ -50,6 +50,90 @@
 }
 
 
+.todo-form{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #F6F5F8;
+    display: flex;
+    width: 85%;
+    padding: 1rem 0;
+}
+
+.form-control{
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #50514f;
+    width: 70%;
+    padding: .5rem;
+    font-size: 2rem;
+    font-size: 14px;
+}
+
+input[type = "date"]{
+    width: 60%;
+}
+
+.form-group{
+    margin: 1rem;
+    width: 80%
+
+}
+
+.form-group label{
+    color: #50514f;
+    font-weight: 400;
+}
+
+.priority-select{
+    border: none;
+    border-radius: 3px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+    padding: .5rem;
+    color: #50514f;
+}
+
+.submit-button{
+    width: 80%;
+    padding: .6rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: #fe5f55;
+    border-radius: 5px;
+    color:  #50514f;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.category-div{
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: #F6F5F8;
+}
+
+.category-list-head{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background-color:  #fe5f55;
+    color: #50514f;
+}
+
+.new-category-form{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
 
 
 
