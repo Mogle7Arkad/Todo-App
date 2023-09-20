@@ -30,13 +30,6 @@ Screenshots
 ### Active 2
 ![activetd](https://github.com/Mogle7Arkad/Todo-App/assets/122323072/9029b73b-3188-4fd2-9ce9-8f0ff736fa31)
 
-#### Inactive
-![Alt Text](dist/img/inactive.png)
 
-#### Active 1
-![Alt Text](dist/img/activetd.png)
-
-#### Avtive 2
-![Alt Text](dist/img/todo1.png)
 
 
