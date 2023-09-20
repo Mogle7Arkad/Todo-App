@@ -132,7 +132,27 @@ input[type = "date"]{
     margin-top: 20px;
 }
 
+.new-category-input{
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #ffffff;
+    color: #50514f;
+    width: 70%;
+    padding: .5rem;
+    font-size: 2rem;
+    font-size: 14px;
+}
 
+.new-category-btn{
+    width: 10%;
+    padding: .5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fe5f55;
+    border: none;
+    margin: 0;
+}
 
 
 
