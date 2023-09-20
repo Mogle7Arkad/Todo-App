@@ -154,7 +154,19 @@ input[type = "date"]{
     margin: 0;
 }
 
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    overflow: auto;
+}
 
+.headline{
+    text-align: center;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
