@@ -168,6 +168,18 @@ input[type = "date"]{
     justify-content: center;
 }
 
+.todo-item{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1.5fr 1fr 1fr .5fr;
+    background-color: #d6d9dc;
+    color: hsl(234, 29%, 20%);
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    min-height: 50px;
+    max-height: 80px;
+}
+
 
 
 
