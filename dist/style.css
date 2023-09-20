@@ -197,5 +197,21 @@ input[type = "date"]{
     margin: auto;
 }
 
+.completed-btn{
+width: 80px;
+padding: 5px;
+margin-left: 1.5rem;
+cursor: pointer;
+background-color: #b1f7ba;
+border: none;
+}
 
+.delete-btn{
+    width: 80px;
+    padding: 5px;
+    margin-right: .5rem;
+    cursor: pointer;
+    background-color: #f51307;
+    border: none;   
+}
 
