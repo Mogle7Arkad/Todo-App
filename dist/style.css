@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .content{
@@ -12,12 +11,12 @@
     grid-template-rows: 1fr 7fr .5fr;
     background-color: #FAF8FF;
 }
+
 .leftbar{
     gap: 10px;
     background-color: #a3a3a3;
     height: 100vh;
     color: hsl(36, 100%, 99%);
-
 }
 
 .header{
@@ -49,7 +48,6 @@
     color:  #50514f;
 }
 
-
 .todo-form{
     margin: auto;
     margin-top: 2rem;
@@ -79,7 +77,6 @@ input[type = "date"]{
 .form-group{
     margin: 1rem;
     width: 80%
-
 }
 
 .form-group label{
@@ -214,4 +211,3 @@ border: none;
     background-color: #f51307;
     border: none;   
 }
-
