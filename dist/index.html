@@ -13,29 +13,28 @@
         </div>
         <div class="main">
             <div class="leftbar">
-                <div class="addTodo-btn" id="addTodo">Add Todo</div>
 
                 <div class="todoform-div">
+                    <div class="addTodo-btn" id="addTodo">Add Todo</div>
                     <div class="todo-form" id="todoForm" style = "display: none">
                         <div class="form-group">
                             <label for="todoTitle">Title:</label>
-                            <input type="text" class="form-control" id="todoTitle">
+                            <input type="text" class="form-control" id="todoTitle" placeholder="Todo Title"></input>
                         </div>
 
                         <div class="form-group">
                             <label for="todoDetails">Details:</label>
-                            <input type = "text" class="form-control" id="todoDetails" rows="4"></input>
+                            <input type = "text" class="form-control" id="todoDetails" rows="4" placeholder="Details"></input>
                         </div>
 
-                        <div class="picks">
+                        <div class="dateNpriority">
                             <div class="form-group">
                                 <label for="todoDueDate">Due Date:</label>
-                                <input type="date" class="form-control" id="todoDueDate" max="2030-01-01T00:00" required="" min="2023-09-07T00:00">
+                                <input type="date" class="form-control" id="todoDueDate"></input>
                             </div>
-                            <div class="form-group">
-                                <label for="todoPriority">Priority:</label>
-                                <select class="custom-select" id="todoPriority">
-                                    <option value="Low" selected>Low</option>
+                            <div class="form-group" id="priority-form-group">
+                                <select class="priority-select" id="todoPriority">
+                                    <option value="Low">Low</option>
                                     <option value="Medium">Medium</option>
                                     <option value="High">High</option>
                                 </select>
@@ -44,17 +43,21 @@
                         <button type="submit" class="submit-button" id="submitTodo">Submit ToDo</button>
                     </div>
                 </div>
-                <h2 class="schedule-list-head">Task Categories</h2>
-                <ul class="schedule-list" data-list></ul>
+                <div class="category-div">
+                    <h2 class="category-list-head">Task Categories</h2>
+                    <ul class="category-list" data-list>
 
-                <form action="" class="new-list-form">
-                    <input type="text" class="new-category-input" placeholder="New Category"/>
-                    <button class="new-list-btn"> + </button>
-                </form>
+                    </ul>
+    
+                    <form action="" class="new-category-form">
+                        <input type="text" class="new-category-input" placeholder="New Category"></input>
+                        <button class="new-category-btn" id="newCategoryBtn"> + </button>
+                    </form>
+                </div>
             </div>
             <div class="rightbar">
                 <h1 class = "headline"> Todo List</h1>
-                <div id="todoLists"></div>
+                <div id="todoListsDiv"></div>
             </div>
         </div>
         <div class="footer"></div>
