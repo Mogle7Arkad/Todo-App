@@ -32,6 +32,22 @@
     margin-bottom: 2rem;
 }
 
+.addTodo-btn{
+    border: 1px solid;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #fe5f55;
+    color:  #50514f;
+}
 
 
 
