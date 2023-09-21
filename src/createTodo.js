@@ -1,5 +1,5 @@
-let Todo = [];
-    
+let Todo = []; 
+
 function TodoOb(title, details, dueDate, priority) {
     this.title = title;
     this.details = details;
@@ -28,15 +28,12 @@ function getTodoElement(todo){
     const todoElement = document.createElement("li");
     todoElement.classList.add("todo-item");
 
-        
-    
     const todoTitle = getTodoTitle(todo);
     const todoDetails = getTodoDetails(todo);
     const todoDueDate = getDueDate(todo);
     const todoPriority = getTodoPriority(todo);
     const completedBtn = getCompletedTodoBtn(todo);
     const deleteTodoBtn = getDeleteTodoBtn(todo);
-
 
     todoElement.appendChild(todoTitle);
     todoElement.appendChild(todoDetails);
