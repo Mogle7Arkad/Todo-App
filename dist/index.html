@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content" class="content">
+        <div class="header">
+            <h1 class="header-name">Task Scheduler</h1>
+        </div>
+
+        <div class="main">
+            <div class="leftbar">
+                <div class="todoform-div">
+                    <div class="addTodo-btn" id="addTodo">Add Todo</div>
+
+                    <div class="todo-form" id="todoForm" style = "display: none">
+                        <div class="form-group">
+                            <label for="todoTitle">Title:</label>
+                            <input type="text" class="form-control" id="todoTitle" placeholder="Todo Title"></input>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="todoDetails">Details:</label>
+                            <input type = "text" class="form-control" id="todoDetails" rows="4" placeholder="Details"></input>
+                        </div>
+
+                        <div class="dateNpriority">
+                            <div class="form-group">
+                                <label for="todoDueDate">Due Date:</label>
+                                <input type="date" class="form-control" id="todoDueDate"></input>
+                            </div>
+
+                            <div class="form-group" id="priority-form-group">
+                                <select class="priority-select" id="todoPriority">
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button" id="submitTodo">Submit ToDo</button>
+                    </div>
+                </div>
+
+                <div class="category-div">
+                    <h2 class="category-list-head">Task Categories</h2>
+                    <ul class="category-list" data-list></ul>
+    
+                    <form action="" class="new-category-form">
+                        <input type="text" class="new-category-input" placeholder="New Category"></input>
+                        <button class="new-category-btn" id="newCategoryBtn"> + </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="rightbar">
+                <h1 class = "headline"> Todo List</h1>
+                <div id="todoListsDiv"></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

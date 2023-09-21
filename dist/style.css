@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    height: 100vh;
+    display: grid;
+    background-image: linear-gradient(140deg, );
+    grid-template-rows: 1fr 7fr .5fr;
+    background-color: #FAF8FF;
+}
+
+.leftbar{
+    gap: 10px;
+    background-color: #a3a3a3;
+    height: 100vh;
+    color: hsl(36, 100%, 99%);
+}
+
+.header{
+    background-image: linear-gradient(10deg,#eea19d,#fe5f55);
+    padding: 20px;
+}
+
+.todoform-div{
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.addTodo-btn{
+    border: 1px solid;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #fe5f55;
+    color:  #50514f;
+}
+
+.todo-form{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #F6F5F8;
+    display: flex;
+    width: 85%;
+    padding: 1rem 0;
+}
+
+.form-control{
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #50514f;
+    width: 70%;
+    padding: .5rem;
+    font-size: 2rem;
+    font-size: 14px;
+}
+
+input[type = "date"]{
+    width: 60%;
+}
+
+.form-group{
+    margin: 1rem;
+    width: 80%
+}
+
+.form-group label{
+    color: #50514f;
+    font-weight: 400;
+}
+
+.priority-select{
+    border: none;
+    border-radius: 3px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+    padding: .5rem;
+    color: #50514f;
+}
+
+.submit-button{
+    width: 80%;
+    padding: .6rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: #fe5f55;
+    border-radius: 5px;
+    color:  #50514f;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.category-div{
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: #F6F5F8;
+}
+
+.category-list-head{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background-color:  #fe5f55;
+    color: #50514f;
+}
+
+.new-category-form{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.new-category-input{
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #ffffff;
+    color: #50514f;
+    width: 70%;
+    padding: .5rem;
+    font-size: 2rem;
+    font-size: 14px;
+}
+
+.new-category-btn{
+    width: 10%;
+    padding: .5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fe5f55;
+    border: none;
+    margin: 0;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    overflow: auto;
+}
+
+.headline{
+    text-align: center;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-item{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1.5fr 1fr 1fr .5fr;
+    background-color: #d6d9dc;
+    color: hsl(234, 29%, 20%);
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    min-height: 50px;
+    max-height: 80px;
+}
+
+.todo-title{
+    margin-left: 10px;
+    height: 80%;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 2px;
+    background-color: #F6F5F8;
+}
+
+.todo-details{
+    margin: auto;
+    height: 80%;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: #F6F5F8;
+}
+
+.todo-date{
+    margin: auto;
+    height: 80%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #F6F5F8;
+}
+
+.todo-priority{
+    margin: auto;
+    height: 80%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #F6F5F8;
+}
+
+.completed-btn{
+width: 80px;
+padding: 5px;
+margin-left: 1.5rem;
+cursor: pointer;
+background-color: #b1f7ba;
+border: none;
+}
+
+.delete-btn{
+    width: 80px;
+    padding: 5px;
+    margin-right: .5rem;
+    cursor: pointer;
+    background-color: #f51307;
+    border: none;   
+}
