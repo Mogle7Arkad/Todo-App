@@ -1,28 +1,19 @@
 import { addTodoToList } from "./createTodo";
 
-function popUpForm(){
-    document.querySelector("#todoForm").style.display = "block";
-}
+const formPopUpBtn = document.querySelector(".addTodo-btn");
+const todoForm = document.querySelector(".todo-form");
+const submitTodoBtn = document.querySelector(".submit-button")
+const deleteTodoBtn = document.querySelector(".delete-btn");
 
-export function spreadTodoForm() {
-    document.querySelector("#addTodo").addEventListener("click", ()=>{
-        popUpForm();
+export function popUpForm() {
+    formPopUpBtn.addEventListener("click", () => {
+        todoForm.style.display = "block";
     })
 }
 
-export function createNewCategory() {
-    document.querySelector("#newCategoryBtn").addEventListener("click", () => {
-
-    })
-}
-
-function closeUpForm(){
-    document.querySelector("#todoForm").style.display = "none";
-}
-
-export function createNewTodo() {
-    document.querySelector("#submitTodo").addEventListener("click", () => {
+export function submitTodo() {
+    submitTodoBtn.addEventListener("click", () => {
         addTodoToList();
-        closeUpForm();
+        todoForm.reset();
     })
 }
