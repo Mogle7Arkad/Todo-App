@@ -72,7 +72,7 @@ function getDueDate(todo){
 function getTodoPriority(todo){
     const todoPriority = document.createElement("h5");
     todoPriority.classList.add("todo-priority");
-    todoPriority.textContent = `${todo.details}`;
+    todoPriority.textContent = `${todo.priority}`;
     return todoPriority;
 }
 

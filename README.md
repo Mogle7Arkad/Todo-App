@@ -1,5 +1,5 @@
 # Todo-App
-===================================
+
 This is a Todo app that allows users to quickly and easily add and delete events and tasks. With this App, users can effortlessly manage their tasks and events, helping them stay organized and on top of their tasks.
 It is a project on @theodinproject intermediate frontend developer course.
 
@@ -16,6 +16,7 @@ Git & Github
 
 App Features
 -------------
+
 - Navigation bar
 
 - Layout resources for different screensizes and orientaion.
@@ -29,7 +30,3 @@ Screenshots
 
 ### Active 2
 ![activetd](https://github.com/Mogle7Arkad/Todo-App/assets/122323072/9029b73b-3188-4fd2-9ce9-8f0ff736fa31)
-
-
-
-

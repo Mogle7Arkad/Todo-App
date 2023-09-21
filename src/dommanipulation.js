@@ -2,8 +2,7 @@ import { addTodoToList } from "./createTodo";
 
 const formPopUpBtn = document.querySelector(".addTodo-btn");
 const todoForm = document.querySelector(".todo-form");
-const submitTodoBtn = document.querySelector(".submit-button")
-const deleteTodoBtn = document.querySelector(".delete-btn");
+const submitTodoBtn = document.querySelector(".submit-button");
 
 export function popUpForm() {
     formPopUpBtn.addEventListener("click", () => {

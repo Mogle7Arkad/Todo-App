@@ -1,6 +1,4 @@
+import { popUpForm, submitTodo} from "./dommanipulation";
 
-import { spreadTodoForm, createNewTodo, createNewCategory} from "./dommanipulation";
-
-spreadTodoForm();
-createNewTodo();
-createNewCategory();
+popUpForm();
+submitTodo();
