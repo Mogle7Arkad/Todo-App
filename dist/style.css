@@ -186,12 +186,31 @@ input[type = "date"]{
     background-color: #F6F5F8;
 }
 
+.todo-details{
+    margin: auto;
+    height: 80%;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: #F6F5F8;
+}
+
 .todo-date{
     margin: auto;
+    height: 80%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #F6F5F8;
 }
 
 .todo-priority{
     margin: auto;
+    height: 80%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #F6F5F8;
 }
 
 .completed-btn{
