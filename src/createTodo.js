@@ -1,15 +1,13 @@
-import { deletebtn } from "./dommanipulation";
-
 let Todo = [];
     
-function TodoOb(title, details, dueDate, priority){
+function TodoOb(title, details, dueDate, priority) {
     this.title = title;
     this.details = details;
     this.dueDate = dueDate;
     this.priority = priority;
 }
 
-export function addTodoToList(){
+export function addTodoToList() {
     let title = document.querySelector("#todoTitle").value;
     let details = document.querySelector("#todoDetails").value;
     let dueDate = document.querySelector("#todoDueDate").value;
@@ -19,52 +17,86 @@ export function addTodoToList(){
     renderOnScreen();
 }
 
-export function clearForm(){
+function clearForm() {
     title.value = "";
     details.value = "";
     dueDate.value = "";
     priority.value = "";
 }
 
-export function renderOnScreen(){
-    let todoScreen = document.querySelector("#todoListsDiv");
+function getTodoElement(todo){
+    const todoElement = document.createElement("li");
+    todoElement.classList.add("todo-item");
 
-    let itemInnerButtons = document.createElement("dive");
-    itemInnerButtons.classList.add("item-btns");
-    
-    todoScreen.innerHTML = "";
-    for (let i = 0; i < Todo.length; i++){
-        let todo = Todo[i];
-        let todoElement = document.createElement("li");
-        todoElement.classList.add("todo-item");
-        todoElement.innerHTML = `
-        <h3 class = "todo-title">${todo.title}</h3>
-        <h5 class = "todo-details">${todo.details}</h5>
-        <h5 class = "todo-date">${todo.dueDate}</h5>
-        <h4 class = "todo-priority">${todo.priority}</h4>
-        `;
-
-        let deleteBtn = document.createElement("button");
-        deleteBtn.classList.add("delete-btn");
-        deleteBtn.innerHTML = "X";
-
-        let completedBtn = document.createElement("button");
-        completedBtn.classList.add("completed-btn");
-        completedBtn.innerHTML = "Completed";
-
-        deleteBtn.addEventListener("click", function(event){
-            event.preventDefault();
-            const item = event.target;
-            const todo = item.parentElement;
-            todo.remove();
-        })
-
-        todoElement.appendChild(completedBtn);
-        todoElement.appendChild(deleteBtn);
         
-        todoScreen.appendChild(todoElement);
-    }
     
+    const todoTitle = getTodoTitle(todo);
+    const todoDetails = getTodoDetails(todo);
+    const todoDueDate = getDueDate(todo);
+    const todoPriority = getTodoPriority(todo);
+    const completedBtn = getCompletedTodoBtn(todo);
+    const deleteTodoBtn = getDeleteTodoBtn(todo);
+
+
+    todoElement.appendChild(todoTitle);
+    todoElement.appendChild(todoDetails);
+    todoElement.appendChild(todoDueDate);
+    todoElement.appendChild(todoPriority);
+    todoElement.appendChild(completedBtn);
+    todoElement.appendChild(deleteTodoBtn);
+
+    return todoElement
 }
 
+function getTodoTitle(todo){
+    const todoTitle = document.createElement("h3");
+    todoTitle.classList.add("todo-title");
+    todoTitle.textContent = `${todo.title}`;
+    return todoTitle;
+}
 
+function getTodoDetails(todo){
+    const todoDetails = document.createElement("h5");
+    todoDetails.classList.add("todo-details");
+    todoDetails.textContent = `${todo.details}`;
+    return todoDetails;
+}
+
+function getDueDate(todo){
+    const todoDueDate = document.createElement("h5");
+    todoDueDate.classList.add("todo-date");
+    todoDueDate.textContent = `${todo.dueDate}`;
+    return todoDueDate;
+}
+
+function getTodoPriority(todo){
+    const todoPriority = document.createElement("h5");
+    todoPriority.classList.add("todo-priority");
+    todoPriority.textContent = `${todo.details}`;
+    return todoPriority;
+}
+
+function getCompletedTodoBtn(){
+    const completedTodoBtn = document.createElement("button");
+    completedTodoBtn.classList.add("completed-btn");
+    completedTodoBtn.textContent = "Completed";
+    return completedTodoBtn;
+}
+
+function getDeleteTodoBtn(){
+    const deleteTodoBtn = document.createElement("button");
+    deleteTodoBtn.classList.add("delete-btn");
+    deleteTodoBtn.textContent = "X";
+    return deleteTodoBtn;
+}
+
+function renderOnScreen(){
+    let todoScreen = document.querySelector("#todoListsDiv");
+    todoScreen.innerHTML = "";
+
+    for (let i = 0; i < Todo.length; i++){
+        let todo = Todo[i];
+        const todoElement = getTodoElement(todo);
+        todoScreen.appendChild(todoElement)
+    }
+}
